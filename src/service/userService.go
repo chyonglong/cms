@@ -15,7 +15,7 @@ import (
 type userService struct{}
 
 /**
-分页查询管理员列表
+分页查询管理员列表*
 */
 func (this *userService) Gridlist(pager *common.Pager, userid, usermail, username, userphone, accout string) (count int, users []model.User) {
 	countsql := "select count(1) from t_user t "
