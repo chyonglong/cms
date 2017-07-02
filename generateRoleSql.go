@@ -1,8 +1,8 @@
 package main
 
 import (
-	"cms/src/controllers"
 	"fmt"
+	"github.com/BitAssetManagement/cms/src/controllers"
 
 	"reflect"
 )

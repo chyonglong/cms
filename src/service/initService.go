@@ -1,7 +1,7 @@
 package service
 
 import (
-	"cms/src/model"
+	"github.com/BitAssetManagement/cms/src/model"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
@@ -15,6 +15,8 @@ var (
 	RoleService         *roleService
 	AdmUserGroupService *admUserGroupService
 	AdmUserService      *admUserService
+	UserService         *userService
+	UserCatogeryService *userCatogeryService
 )
 
 func init() {
@@ -31,6 +33,9 @@ func init() {
 		new(model.GroupRoleRel),
 		new(model.Admuser),
 		new(model.UserGroupRel),
+		new(model.User),
+		new(model.Usercatogery),
+		new(model.UserCatogeryRel),
 	)
 	orm.RunSyncdb("default", false, true)
 
@@ -63,4 +68,6 @@ func initService() {
 	RoleService = &roleService{}
 	AdmUserGroupService = &admUserGroupService{}
 	AdmUserService = &admUserService{}
+	UserCatogeryService = &userCatogeryService{}
+	UserService = &userService{}
 }

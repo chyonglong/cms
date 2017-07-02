@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"cms/src/common"
-	"cms/src/service"
+	"github.com/BitAssetManagement/cms/src/common"
+	"github.com/BitAssetManagement/cms/src/service"
 	"strconv"
 
 	"github.com/astaxie/beego"

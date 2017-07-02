@@ -1,6 +1,6 @@
 package controllers
 
-import "cms/src/service"
+import "github.com/BitAssetManagement/cms/src/service"
 
 type MainController struct {
 	BaseController

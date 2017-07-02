@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"cms/src/controllers"
+	"github.com/BitAssetManagement/cms/src/controllers"
 
 	"github.com/astaxie/beego"
 )
@@ -19,9 +19,11 @@ func init() {
 	// beego.Router("/loginpage", &controllers.MainController{}, "*:Loginpage")
 	//自动绑定映射关系
 	beego.AutoRouter(&controllers.AdmUserController{})
+	beego.AutoRouter(&controllers.UserController{})
 	beego.AutoRouter(&controllers.LoginController{})
 	beego.AutoRouter(&controllers.RoleController{})
 	beego.AutoRouter(&controllers.AdmUserGroupController{})
+	beego.AutoRouter(&controllers.UserCatogeryController{})
 
 	beego.Info("init routers end.")
 }

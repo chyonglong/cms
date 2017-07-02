@@ -23,6 +23,27 @@ Date: 2016-09-04 17:49:48
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `accout` varchar(255) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
+  `mail` varchar(255) NOT NULL DEFAULT '',
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `phone` varchar(255) NOT NULL DEFAULT '',
+  `ischarge` tinyint(4) NOT NULL DEFAULT '0',
+  `catogery` varchar(255) NOT NULL DEFAULT '',
+  `createtime` datetime NOT NULL,
+  `updatetime` datetime NOT NULL,
+  `isdel` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`accout`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+
+-- ----------------------------
 -- Table structure for t_admuser
 -- ----------------------------
 DROP TABLE IF EXISTS `t_admuser`;

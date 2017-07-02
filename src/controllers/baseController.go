@@ -1,10 +1,10 @@
 package controllers
 
 import (
-	"cms/src/common"
-	"cms/src/model"
-	"cms/src/service"
 	"fmt"
+	"github.com/BitAssetManagement/cms/src/common"
+	"github.com/BitAssetManagement/cms/src/model"
+	"github.com/BitAssetManagement/cms/src/service"
 	"strconv"
 	"strings"
 

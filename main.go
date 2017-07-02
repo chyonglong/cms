@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/astaxie/beego"
 
-	_ "cms/src/routers"
-	_ "cms/src/service"
+	_ "github.com/BitAssetManagement/cms/src/routers"
+	_ "github.com/BitAssetManagement/cms/src/service"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"cms/src/common"
-	"cms/src/model"
+	"github.com/BitAssetManagement/cms/src/common"
+	"github.com/BitAssetManagement/cms/src/model"
 	"strconv"
 	"strings"
 
